@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <Button android:id="@+id/resetbutton" android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:text="Random Color" />
+ 
+ 	<TextView android:text="Click a Color to Regenerate:"
+		android:id="@+id/abovetext" 
+		android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+    
+    	<TableRow android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/tableRowText" 
+		android:visibility="visible" android:layout_gravity="fill_horizontal|bottom">
+
+		<ImageView android:id="@+id/ImageViewOne" 
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+
+		<ImageView android:id="@+id/ImageViewTow" 
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_weight="1" />
+			
+		<ImageView android:id="@+id/ImageViewThree" 
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_weight="1" />	
+	</TableRow>
+	<TextView android:text="Your Color Is:"
+		android:id="@+id/middletext" 
+		android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+				<TextView android:text="R: G: B: Hex:"
+		android:id="@+id/colortext" 
+		android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+		
+    	<TableRow android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/tableRowResult" android:layout_alignParentTop="true"
+		android:visibility="visible" android:layout_gravity="fill_horizontal|bottom">
+
+		<ImageView android:id="@+id/ImageViewResult" 
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			/>
+			
+ 	
+
+		
+	</TableRow>		
+	 
+	    
+    
+	<com.google.ads.AdView android:id="@+id/adView"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" ads:adUnitId="a14dfa8cc4eb026"
+		ads:adSize="BANNER" ads:loadAdOnCreate="false" />
+
+</LinearLayout>
